@@ -47,10 +47,22 @@ int main(){
 
     std::cout << &age3 << std::endl;
 
+    /*pointers */
+
     int * ptr_age3 = &age3;
 
     std::cout << ptr_age3 << std::endl;
     std::cout << *ptr_age3 << std::endl;
+
+    /*reference*/
+
+    char gender = 'M';
+    char& ref_gender = gender;
+    ref_gender = 'F';
+
+    std::cout << "gender=" << gender << std::endl;
+    std::cout << "ref_gender=" << ref_gender << std::endl;
+    //std::cout
 
     
 
