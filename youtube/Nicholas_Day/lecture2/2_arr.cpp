@@ -22,6 +22,9 @@ int main(){
     for(int i = 0; i < 5; i++){
         cout << "mark is " << *(marks + i) << "\n"; 
     }
+
+
+    int arr_2d[][2] = {{1,2}, {2,3}, {2,5}, {6,8}};
     return 0;
 }
 
