@@ -58,6 +58,21 @@ protected:
 };
 */
 
+/*
+PARENT CLASS
+class Model{
+public:
+    void Draw(){}
+};
+
+CHILD CLASS
+class Car : public Model{
+public:
+    void DoStuff(){}
+};
+
+*/
+
 int main(){
     BasicPlayer myBasicPlayer; //it has a default constructor and can be declared like this
     Player myPlayer(7, "Flamingo");
