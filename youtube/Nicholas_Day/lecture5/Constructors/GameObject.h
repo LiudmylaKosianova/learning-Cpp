@@ -3,7 +3,8 @@ using namespace std;
 
 class GameObject{
 public:
+    static int instances;
     int id;
-    GameObject();
+    GameObject()=delete;
     GameObject(int id);
 };
