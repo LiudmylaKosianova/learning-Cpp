@@ -4,16 +4,30 @@ using namespace std;
 
 //a thread function that contains a statement to be exeuted
 DWORD WINAPI BasicThread(LPVOID param){
-    cout << "Thread starts\n";
-    Sleep(2000);
-    cout << "Thread ends\n";
+    // cout << "Thread starts\n";
+    // Sleep(2000);
+    // cout << "Thread ends\n";
+    
     return 0;
 }
 
 DWORD WINAPI MessageThread(LPVOID param){
+    // for(int i = 0; i < 5; i++){
+    //     cout << "Thread\n";
+    //     Sleep(500);
+    // }
+    //int tab = (int)param;
+    int tab = *((int*)(&param));
     for(int i = 0; i < 5; i++){
-        cout << "Thread\n";
-        Sleep(500);
+        for(int j = 0; j < 100; j++){
+            if(tab==1){
+                cout << "\t1:Thread\n";
+            }else if(tab == 2){
+                cout << "\t\t2:Thread\n";
+            }else{
+                cout << "\t\t\t3:Thread\n";
+            }
+        }
     }
     return 0;
 }
